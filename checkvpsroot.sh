@@ -25,5 +25,5 @@ echo "          ███████████   ██            ███�
 echo -e ""
 echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
-echo "                                                      Quá Trình Cài Đặt XrayR Đang Diễn Ra !"
+echo "                                                        Quá Trình Kiểm Tra Máy Chủ Đang Diễn Ra !"
 bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/checkvpsos.sh)
