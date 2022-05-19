@@ -89,4 +89,4 @@ echo -e ""
 echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
 echo "                                                      Quá Trình Cài Đặt XrayR Đang Diễn Ra !"
-bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/timesetupxrayr.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/timesetup1stack.sh)
