@@ -26,12 +26,13 @@ read -p "Key: " key
 
 if [[ $key == nguyenvannghi ]]; then
 echo "Xác Thực Thành Công !" 
-sleep 5
+sleep 3
 bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/luachonspeed4g.sh)
 elif [[ $key == dangvanhoang ]]; then
 echo "Xác Thực Thành Công !" 
-sleep 5
+sleep 3
 bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/luachonvpndata.sh)
 else echo "Key Không Chính Xác !"
+sleep 3
 exit
 fi
