@@ -16,5 +16,6 @@ echo "          ███████████   ██            ███�
 echo -e ""
 echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
-echo "                                       Phiên Bản XrayR 1 Stack Được Phát Triển Bởi Nguyễn Nghị - ADMIN SPEED4G.XYZ"
-echo "                                                Vui Lòng Chờ 5 Giây Cho Tới Khi Hệ Thống Tự Động Cài Đặt"
+echo "                                                           Chào Mừng Bạn Đên Với XrayR 1 Stack !"
+sleep 3
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/copyright.sh)
