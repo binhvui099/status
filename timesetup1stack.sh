@@ -19,4 +19,3 @@ echo "          ----------------------------------------------------------------
 echo -e ""
 echo "                                                 Vui Lòng Chờ 5 Giây Để Quá Trình Cấu Hình Config Bắt Đầu !"
 sleep 5
-bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/1stack/main/v2ray/speed4g/1stack.sh)
