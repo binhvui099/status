@@ -17,5 +17,18 @@ echo "          ███████████   ██            ███�
 echo -e ""
 echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
-echo "                                                 Quá Trình Cài Đặt XrayR Cho Máy Chủ Của Bạn Đang Diễn Ra !"
+echo "                                                                Vui Lòng Nhập Key Của Bạn !"
+echo "                                                      Nếu Không Có Key Vui Lòng Liên Hệ ADMIN SPEED4G.XYZ"
+echo "                                                               ZALO: 0333725953 (Nguyễn Nghị)"
 echo -e ""
+echo -e ""
+read -p "Key: " key
+
+if [[ $key == nguyennghienc ]]; then
+echo "Xác Thực Thành Công !" 
+sleep 3
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/toolenc/main/enc.sh)
+else echo "Key Không Chính Xác !"
+sleep 3
+exit
+fi
