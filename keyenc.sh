@@ -27,7 +27,7 @@ read -p "Key: " key
 if [[ $key == nguyennghienc ]]; then
 echo "Xác Thực Thành Công !" 
 sleep 3
-bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/toolenc/main/enc.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/setuphdsdenc.sh)
 else echo "Key Không Chính Xác !"
 sleep 3
 exit
