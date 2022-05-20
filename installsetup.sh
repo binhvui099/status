@@ -127,14 +127,14 @@ install_XrayR() {
 
     if  [ $# == 0 ] ;then
         last_version=$(curl -Ls "https://api.github.com/repos/Nghi235/xrayrr/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
-	bash <(curl -Ls https://raw.githubusercontent.com/anonymus152/xrayr/main/1stack.sh)
+	bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
         if [[ ! -n "$last_version" ]]; then
             echo -e "  Không Phát Hiện Được Phiên Bản XrayR, Có Thể Đã Vượt Quá Giới Hạn Github API, Vui Lòng Thử Lại Sau Hoặc Chỉ Định Phiên Bản XrayR Để Cài Đặt $ theo cách thủ công{plain}"
             exit 1
         fi
         echo -e "  Đã Phát Hiện Phiên Bản Mới Nhất Của XrayR：${last_version}，Bắt Đầu Cài Đặt"
         wget -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://github.com/Nghi235/xrayrr/releases/download/${last_version}/XrayR-linux-${arch}.zip
-	bash <(curl -Ls https://raw.githubusercontent.com/anonymus152/xrayr/main/1stack.sh)
+	bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
         if [[ $? -ne 0 ]]; then
             echo -e "  Không Tải Xuống Được XrayR, Hãy Đảm Bảo Máy Chủ Của Bạn Có Thể Tải Xuống Tệp Github ${plain}"
             exit 1
