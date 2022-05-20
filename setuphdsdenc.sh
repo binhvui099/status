@@ -32,7 +32,7 @@ echo -e ""
     case "${num}" in
         1) bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/hdsdenc.sh)
         ;;
-        2) bash <(curl -Ls https://github.com/Nghi235/toolenc/blob/main/enc.sh)
+        2) bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/toolenc/main/enc.sh)
         ;;
         *) echo -e "  Chỉ Có Thể Nhập 1 Hoặc 2" && exit
         ;;
