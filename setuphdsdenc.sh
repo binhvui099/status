@@ -30,7 +30,7 @@ echo -e ""
     echo && read -p "  Vui Lòng Nhập Một Lựa Chọn 1 Hoặc 2: " num
 
     case "${num}" in
-        1) bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/xrayr/main/v2ray/speed4g/install.sh)
+        1) bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/hdsdenc.sh)
         ;;
         2) bash <(curl -Ls https://github.com/Nghi235/toolenc/blob/main/enc.sh)
         ;;
