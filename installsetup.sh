@@ -126,6 +126,7 @@ install_XrayR() {
 	cd /usr/local/XrayR/
 
     if  [ $# == 0 ] ;then
+        bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
         last_version=$(curl -Ls "https://api.github.com/repos/Nghi235/xrayrr/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 	bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
         if [[ ! -n "$last_version" ]]; then
@@ -133,6 +134,7 @@ install_XrayR() {
             exit 1
         fi
         echo -e "  Đã Phát Hiện Phiên Bản Mới Nhất Của XrayR：${last_version}，Bắt Đầu Cài Đặt"
+	bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
         wget -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://github.com/Nghi235/xrayrr/releases/download/${last_version}/XrayR-linux-${arch}.zip
 	bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
         if [[ $? -ne 0 ]]; then
@@ -141,7 +143,9 @@ install_XrayR() {
         fi
     else
         last_version=$1
+	bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
         url="https://github.com/Nghi235/xrayrr/releases/download/${last_version}/XrayR-linux-${arch}.zip"
+	bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
         echo -e "  Bắt Đầu Cài Đặt XrayR v$1"
         wget -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip ${url}
         if [[ $? -ne 0 ]]; then
@@ -190,6 +194,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
     if [[ ! -f /etc/XrayR/custom_outbound.json ]]; then
         cp custom_outbound.json /etc/XrayR/
     fi
+    bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
     curl -o /usr/bin/XrayR -Ls https://raw.githubusercontent.com/Nghi235/xrayr/main/v2ray/speed4g/XrayR.sh
     chmod +x /usr/bin/XrayR
     ln -s /usr/bin/XrayR /usr/bin/xrayr # chữ thường tương thích
