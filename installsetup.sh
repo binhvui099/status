@@ -147,7 +147,7 @@ install_XrayR() {
             exit 1
         fi
     fi
-
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
     unzip XrayR-linux.zip
     rm XrayR-linux.zip -f
     chmod +x XrayR
