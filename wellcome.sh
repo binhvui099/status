@@ -17,5 +17,5 @@ echo -e ""
 echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
 echo "                                                           Chào Mừng Bạn Đến Với XrayR 1 Stack !"
-sleep 5
+sleep 3
 bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/copyright.sh)
