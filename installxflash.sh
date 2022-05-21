@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Phiên Bản Chưa Được Phát Hành"	
-sleep 3
+echo -e ""
+echo "Phiên Bản Chưa Được Phát Hành !"	
 exit
