@@ -18,5 +18,5 @@ echo "          ----------------------------------------------------------------
 echo -e ""
 echo "                                                       Bản Quyền Thuộc Về Nguyễn Nghị - ADMIN SPEED4G.XYZ"
 echo "                                                               ZALO: 0333725953 (Nguyễn Nghị)"
-sleep 5
+sleep 3
 bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/timesetupport.sh)
