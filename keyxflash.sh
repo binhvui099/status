@@ -38,10 +38,12 @@ if [[ $key == nguyenvannghi ]]; then
 sleep 2
 echo "Xác Thực Thành Công !" 
 sleep 1
-exit
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/installxflash.sh)
 else 
 sleep 2
 echo "Key Không Chính Xác !"
+sleep 1
+rm -rf ../../../abc.sh
 exit
 fi
 		
