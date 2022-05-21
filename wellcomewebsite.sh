@@ -21,3 +21,4 @@ echo "                                               Chào Mừng Bạn Đến V
 echo -e ""
 echo -e ""
 sleep 3
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/luachonv2board.sh)
