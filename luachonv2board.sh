@@ -139,7 +139,7 @@ echo -e ""
         ;;
         28) bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/luachonsource.sh)
         ;;
-        *) echo -e "  Vui Lòng Nhập Số Chính Xác [1-28]$" && exit
+        *)echo -e "" echo -e "  Vui Lòng Nhập Số Chính Xác [1-28]" sleep 3 && bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/luachonv2board.sh)
         ;;
     esac
 	
