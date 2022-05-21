@@ -49,8 +49,8 @@ fi
 		
 		
         ;;
-        2) bash <(curl -Ls https://github.com/Nghi235/status/blob/main/luachonsource.sh)
+        2) bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/luachonsource.sh)
         ;;
-        *) echo -e "  Chỉ Có Thể Nhập 1 Hoặc 2" && bash <(curl -Ls https://github.com/Nghi235/status/blob/main/luachonsource.sh)
+        *) echo -e "  Chỉ Có Thể Nhập 1 Hoặc 2" && bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/keyxflash.sh)
         ;;
     esac
