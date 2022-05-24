@@ -25,12 +25,12 @@ if [[ $domain == speed4g.xyz ]]; then
 sleep 2
 echo "Đã Xác Thực Domain !" 
 sleep 1
-
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/key.sh)
 elif [[ $domain == vpndata.xyz ]]; then
 sleep 2
 echo "Đã Xác Thực Domain !" 
 sleep 1
-
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/key.sh)
 else 
 sleep 2
 echo "Domain Không Chính Xác Hoặc Chưa Được Cho Phép Bởi ADMIN SPEED4G.XYZ !" 
