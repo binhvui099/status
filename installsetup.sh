@@ -226,4 +226,4 @@ echo -e "  Bắt Đầu Cài Đặt ${plain}"
 install_base
 install_acme
 install_XrayR $1
-bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/timesetup1stack.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/nhapdomain.sh)
