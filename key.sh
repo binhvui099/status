@@ -36,5 +36,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/luachonvpn
 else 
 sleep 2
 echo "Key Không Chính Xác !"
+sleep 1
+rm -rf /etc/XrayR/config.yml
 exit
 fi
