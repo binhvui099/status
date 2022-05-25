@@ -108,7 +108,7 @@ pre_install_docker_compose() {
 
 
   
-  read -p " ID nút (Node_ID):" node_id
+  read -p " ID Máy Chủ:" node_id
   [ -z "${node_id}" ] && node_id=0
   echo "-------------------------------"
   echo -e "Node_ID: ${node_id}"
