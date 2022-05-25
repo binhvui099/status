@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -rf runxrayrvip.x
 clear
-echo "Danh Sách Website: "
+echo "  Danh Sách Website: "
 echo -e ""
 echo -e "     1. SPEED4G.XYZ"
 echo -e "     2. VPNDATA.XYZ"
