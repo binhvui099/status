@@ -300,7 +300,7 @@ Update_xrayr() {
 
 #show last 100 line log
 
-Logs_xrayr() {
+logs_xrayr() {
   echo "100 Dòng Nhật Kí Sẽ Được Hiển Thị"
   docker-compose logs --tail 100
 }
@@ -316,13 +316,13 @@ UpdateConfig_xrayr() {
   docker-compose up -d
 }
 
-Restart_xrayr() {
+restart_xrayr() {
   cd ${cur_dir}
   docker-compose down
   docker-compose up -d
   echo "Khởi Động Lại Thành Công !"
 }
-Delete_xrayr() {
+delete_xrayr() {
   cd ${cur_dir}
   docker-compose down
   cd ~
@@ -330,12 +330,12 @@ Delete_xrayr() {
   echo "Đã Xóa Thành Công !"
 }
 #Stop
-Stop_xrayr() {
+stop_xrayr() {
   cd ${cur_dir}
   docker-compose down
   echo "Đã Dừng Thành Công !"
 }
-  Start_xrayr() {
+  start_xrayr() {
   cd ${cur_dir}
   docker-compose up -d
   echo "Đã Chạy Thành Công !"
