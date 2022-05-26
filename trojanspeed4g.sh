@@ -108,13 +108,17 @@ pre_install_docker_compose() {
 
 
   
-  read -p " ID Máy Chủ:" node_id
+  read -p " Nhập ID Máy Chủ: " node_id
   [ -z "${node_id}" ] && node_id=0
   echo "-------------------------------"
-  echo -e "Node_ID: ${node_id}"
+  echo -e "ID Máy Chủ Là: ${node_id}"
   echo "-------------------------------"
   
-
+ read -p "Nhập Địa Chỉ Máy Chủ: " CertDomain
+  [ -z "${CertDomain}" ] && CertDomain="0"
+  echo "-------------------------------"
+  echo "Địa Chỉ Máy Chủ Là: ${CertDomain}"
+  echo "-------------------------------"
 
   
   
@@ -210,7 +214,7 @@ Nodes:
 EOF
   
   sed -i "s|NodeID:.*|NodeID: ${node_id}|" ./config.yml
-
+  sed -i "s|CertDomain:.*|CertDomain: \"${CertDomain}\"|" ./config.yml
 
   }
 
