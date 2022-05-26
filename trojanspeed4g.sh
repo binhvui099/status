@@ -248,7 +248,7 @@ chmod +x /usr/local/bin/docker-compose
   echo
   echo -e "Đã Hoàn Tất Cài Đặt ！"
   echo -e "0 0 */3 * *  cd /root/${cur_dir} && /usr/local/bin/docker-compose pull && /usr/local/bin/docker-compose up -d" >>/etc/crontab
-  echo -e "Cài Đặt Cập Nhật Thời Gian Kết Thúc Đã Hoàn Tất! Hệ Thống Sẽ Update Sau [${green}24H${plain}] Từ Lúc Bạn Cài Đặt"
+  
 }
 
 install_check() {
