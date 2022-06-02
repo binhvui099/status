@@ -1,21 +1,21 @@
 #!/bin/bash
 
 clear
-echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
-echo "          ███████████   ███████████   ███████████   ███████████   ███████████   ██       ██   ███████████       ██          ██   ██          ██   ██████████"
-echo "          ██       ██   ██       ██   ██            ██            ██       ██   ██       ██   ██       ██        ██        ██     ██        ██            ██"
-echo "          ██            ██       ██   ██            ██            ██       ██   ██       ██   ██                  ██      ██       ██      ██            ██"
-echo "          ██            ██       ██   ██            ██            ██       ██   ██       ██   ██                   ██    ██         ██    ██            ██"
-echo "          ██            ██       ██   ██            ██            ██       ██   ██       ██   ██                    ██  ██           ██  ██            ██"
-echo "          ███████████   ███████████   ███████████   ███████████   ██       ██   ███████████   ██                     ████             ████            ██"
-echo "                   ██   ██            ██            ██            ██       ██            ██   ██   ██████            ████              ██            ██"
-echo "                   ██   ██            ██            ██            ██       ██            ██   ██   ██  ██           ██  ██             ██           ██"
-echo "                   ██   ██            ██            ██            ██       ██            ██   ██       ██          ██    ██            ██          ██"
-echo "          ██       ██   ██            ██            ██            ██       ██            ██   ██       ██         ██      ██           ██         ██"
-echo "          ███████████   ██            ███████████   ███████████   ███████████            ██   ███████████   ██   ██        ██          ██         ██████████"
+echo "          ████               ██████████     ██                    ██   █████████████    ████          ██          ████                   ████     ██████████████"
+echo "         ██  ██                      ██      ██                  ██    ██         ██    ██ ██         ██          ██ ██                 ██ ██     ██"
+echo "        ██    ██                    ██        ██                ██     ██         ██    ██  ██        ██          ██  ██               ██  ██     ██"
+echo "       ██      ██                  ██          ██              ██      ██         ██    ██   ██       ██          ██   ██             ██   ██     ██"
+echo "      ██        ██                ██            ██            ██       ██         ██    ██    ██      ██          ██    ██           ██    ██     ██"
+echo "     ██          ██              ██              ██          ██        █████████████    ██     ██     ██          ██     ██         ██     ██     ██████████████"
+echo "    ████████████████            ██                ██        ██         ██               ██      ██    ██          ██      ██       ██      ██     ██"
+echo "   ██              ██          ██                  ██      ██          ██               ██       ██   ██          ██       ██     ██       ██     ██"
+echo "  ██                ██        ██                    ██    ██           ██               ██        ██  ██          ██        ██   ██        ██     ██"
+echo " ██                  ██      ██                      ██  ██            ██               ██         ██ ██          ██         ██ ██         ██     ██"
+echo "██                    ██     ██████████               ████             ██               ██          ████     ██   ██         █████         ██     ██████████████"
 echo -e ""
-echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
+echo "-----------------------------------------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
 echo "                                                 Quá Trình Cài Đặt XrayR Cho Máy Chủ Của Bạn Đang Diễn Ra !"
 echo -e ""
@@ -45,7 +45,7 @@ elif cat /proc/version | grep -Eqi "ubuntu"; then
 elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
     release="centos"
 else
-    echo -e "  Phiên Bản Không Hợp Lệ Vui Lòng Liên Hệ ADMIN SPEED4G.XYZ ${plain}\n" && exit 1
+    echo -e "  Phiên Bản Không Hợp Lệ Vui Lòng Liên Hệ ADMIN AZVPN.ME ${plain}\n" && exit 1
 fi
 
 arch=$(arch)
@@ -62,7 +62,7 @@ fi
 echo "  Tiến Trình: ${arch}"
 
 if [ "$(getconf WORD_BIT)" != '32' ] && [ "$(getconf LONG_BIT)" != '64' ] ; then
-    echo "  Phần Mềm Này Không Hỗ Trợ Hệ Thống 32-bit (x86), Vui Lòng Sử Dụng Hệ Thống 64-bit (x86_64), Nếu Phát Hiện Sai, Vui Lòng Liên Hệ ADMIN SPEED4G.XYZ"
+    echo "  Phần Mềm Này Không Hỗ Trợ Hệ Thống 32-bit (x86), Vui Lòng Sử Dụng Hệ Thống 64-bit (x86_64), Nếu Phát Hiện Sai, Vui Lòng Liên Hệ ADMIN AZVPN.ME"
     exit 2
 fi
 
@@ -172,14 +172,14 @@ bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
     if [[ ! -f /etc/XrayR/config.yml ]]; then
         cp config.yml /etc/XrayR/
         echo -e ""
-        echo -e "  Nếu Không Biết Cấu Hình Vui Lòng Liên Hệ ADMIN SPEED4G.XYZ"
+        echo -e "  Nếu Không Biết Cấu Hình Vui Lòng Liên Hệ ADMIN AZVPN.ME
     else
         systemctl start XrayR
         sleep 2
         check_status
         echo -e ""
         if [[ $? == 0 ]]; then
-            echo -e "  XrayR Khởi Động Thành Công ! (COPYRIGHT BY ADMIN SPEED4G.XYZ)${plain}"
+            echo -e "  XrayR Khởi Động Thành Công ! (COPYRIGHT BY ADMIN AZVPNME)${plain}"
         else
             echo -e "  XrayR Khởi Động Thất Bại, Vui Lòng Sử Dụng XrayR Log Để Kiểm Tra${plain}"
         fi
@@ -200,8 +200,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/clear.sh)
     ln -s /usr/bin/XrayR /usr/bin/xrayr # chữ thường tương thích
     chmod +x /usr/bin/xrayr
     echo -e ""
-    echo "------------[Nguyễn Nghị]------------"
-    echo "---------[ADMIN SPEED4G.XYZ]---------"
+    echo "------------[Nguyễn Mạnh Long]-------------"
+    echo "---------[ADMIN AZVPN.ME]---------"
     echo "  Cách Sử Dụng Tập Lệnh Quản Lý XrayR"
     echo "---------------------------------------------------------"
     echo "  XrayR                      - Hiển Thị Menu Quản Lý"
