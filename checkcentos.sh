@@ -16,5 +16,5 @@ echo "██                    ██     ██████████       
 echo -e ""
 echo "-----------------------------------------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
-echo "                                                          Thông Báo: Phiên Bản CentOS Không Hợp Lệ !"
-echo "                                                         Vui Lòng Sử Dụng Phiên Bản CentOS 7 Trở Lên"
+echo "                                                      Thông Báo: Phiên Bản CentOS Không Hợp Lệ !"
+echo "                                                     Vui Lòng Sử Dụng Phiên Bản CentOS 7 Trở Lên"
