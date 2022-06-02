@@ -4,9 +4,9 @@ sudo ufw allow 80/tcp && sudo ufw allow 443/tcp && sudo ufw allow 80 && sudo ufw
 clear
 echo "  Danh Sách Website: "
 echo -e ""
-echo -e "     1. SPEED4G.XYZ"
-echo -e "     2. VPNDATA.XYZ"
-echo -e "     3. EZDIGI.BIZ"
+echo -e "     1. AZVPN.ME"
+echo -e "     2. 4GSIEUTOCDO.COM"
+echo -e "     3. DATA4G.NET"
 echo -e ""
 read -p "  Vui Lòng Nhập Số Để Chọn Website Của Mình: " num
 
